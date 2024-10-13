@@ -1,0 +1,49 @@
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+UserInterfaceState.xcuserstate
+**/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Swift
+#
+*.build
+*.o
+*.out
+*.bak
+*.bak_*
+*.swp
+*~
+*.DS_Store
+
+# Cocoapods
+#
+Pods/
+
+# Carthage
+#
+Carthage/Build
+
+# fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Keys
+APIKey.plist

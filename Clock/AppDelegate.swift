@@ -1,20 +1,14 @@
 import Cocoa
 
-@main
 final class AppDelegate: NSObject, NSApplicationDelegate {
-//    @IBOutlet var window: NSWindow!
     private var statusItem: NSStatusItem!
     private var timer: Timer!
-    private let dateFormatter = DateFormatter()
+    private var dateFormatter: DateFormatter!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        dateFormatter = DateFormatter()
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-
-        statusItem.button?.font = .monospacedDigitSystemFont(
-            ofSize: NSFont.smallSystemFontSize,
-            weight: .regular
-        )
-
+        statusItem.button?.font = .monospacedSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)
         dateFormatter.dateFormat = "dd/MM/yy HH:mm:ss"
 
         updateStatusItemTitle()
